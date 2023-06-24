@@ -1,0 +1,149 @@
+JavaScript
+
+1. What is Javascript?
+
+Javascript is a lighweight, interpreted or compiled single threaded programming language, 
+it is most well-known for scripting language for web pages.
+
+-----------------------------------------------------------------------------------------
+
+2. what is Variables?
+Variables are containers that store values
+    * let 
+    * const 
+    * var 
+
+------------------------------------------------------------------------------------------
+3. Data Types
+    * String: This is sequence of text known as string. To signify that value is an string,
+              enclose it in single '' or double quotes ""
+
+              eg: let myvariable = 'Niranjan' (or)
+                  let myvariable = "Niranjan"
+    
+    * Number: This is number, numbers dont have quotes around them
+              
+              eg: let myvariable = 10
+
+    * Boolean: This is true or false value. The words true and false are special keywords
+                that dont need quotation marks
+
+              eg: let myvariable = true/flase
+    
+    * Array: This is the structure that allows you to store multiple values in single interface
+
+              eg: let myvariable = [1, 'Niranjan', 'Dhruvesh', 10] (it refers to each value like
+                  this myvariable[0], myvariable[1])
+    
+    * Object: This can be anything. Everything in the Javascript is an object and can be stored in
+              an variable 
+
+              eg: let myvariable = document.querySelector("h1");
+
+----------------------------------------------------------------------------------------------
+4. Operators
+An operator is a mathematical symbol that produces a result based on two values (or variables)
+
+    * Addition: Adding two numbers together or combine two strings
+
+                eg: 6 + 7 
+                    'Hello' + 'World'
+    
+    * Subtraction, Multiplication, Division: These do what you expect them to do in basic maths
+
+                eg: 9 - 2;
+                    9 * 2;
+                    9 / 2;
+    
+    * Assignment operator: This assign a value to an variable.
+
+                eg: let myvariable = 'Niranjan'
+
+    * Strict equality: This performs a test to see if two values are equal and of the same data type.
+                        it returns a true/flase (Boolean) result.
+
+                eg: let myvariable = 'Niranjan'
+                    myvariable === 'Dhruvesh'
+
+    * Not, Does-not-equal: This returns the logically opposite value of what it precedes. it turns
+      true into to false. When it is used alongside the equality operator, the negation operator tests
+      whether the two values are not equal
+
+                eg: let myvariable = 'Niranjan';
+                    !(myvariable === 'Niranjan')
+
+                    Does-not-equal
+
+                    let myvariable = 'Niranjan';
+                    myvariable !== 'Niranjan';
+
+----------------------------------------------------------------------------------------------------
+
+5. Conditionals
+Conditionals are code structures used to test if an expression is true or not. A very form of Conditionals
+is the if...else statement
+
+                eg: let icecream = 'Chocolate';
+                    if(icecream === 'chocolate'){
+                        alert('Yay, i love chocolate icecream')
+                    } else {
+                        alert('Awww, chocolate is myt favorite')
+                    }
+
+-------------------------------------------------------------------------------------------------------------
+6. Functions
+Function is code snippet that can be called by other code or by itself or a variable that referes to the function.
+When function is called arguments are passed to the function as an input, and then function return a value.
+A function name is an identifier included as a part of a function declaration or function expression.
+The function name scope depends on whether the function name is declaration or expression.
+
+    * Anonymous function: Anonymous function is function without a function name, only function 
+      expression can be anonymous, function declaration must have a name
+
+            eg: function(){}
+
+    * Named function: is a function with function name
+
+            eg: i) function niranjan() {} --> Function Declaration
+                ii) (function niranjan() {}) --> Named function expression
+                iii) const niranjan = () => {} --> Arrow function
+
+    * Inner function: An inner function is a function inside another function (square in this case)
+            eg: function addsquare(a,b){
+                    function square(x){
+                        return x * x;
+                     }
+                return square(a) + square(b)
+            }
+
+    * Outer Function: An outer function is a function containing a function (addsquare in this case)
+            eg: function addsquare(a,b){
+                    function square(x){
+                        return x * x;
+                     }
+                return square(a) + square(b)
+            }
+
+    * Recursive function: is a function that calls itself
+            eg: function loop(x) {
+                if (x <= 10) return;
+                loop (x + 1)
+            }
+    * Immediately invoked function expression: is a function that is called directly after the function
+      is loaded into the browser compiler
+
+            eg: function nir(){
+                console.log("Hellow World")
+            } 
+
+--------------------------------------------------------------------------------------------------------
+7. Function Declaration
+
+Function declaratioin define a function with the specified paramaters
+
+---------------------------------------------------------------------------------------------------------
+8. Events
+
+Events are code structures that listen for the activity in the browser, and run the code in response.
+The most obivious example is handling the click event, which is fired by the browser when you click on
+something with your mouse
